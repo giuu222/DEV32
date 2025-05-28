@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo com fundo suave e centralização */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container principal */
+.global {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Formulário */
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs de texto e senha */
+.formulario input[type="text"],
+.formulario input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="password"]:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+/* Botão de login */
+.formulario input[type="submit"] {
+    background-color: #4facfe;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #00c6ff;
+}
+
+/* Link de cadastro */
+.formulario a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+}
